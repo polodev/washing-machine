@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ওয়াশিং মেশিন ব্যবহার নির্দেশিকা</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap');
+        
+        /* Base styles */
+        body {
+            font-family: 'Noto Sans Bengali', sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+        
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        
+        /* Typography */
+        h1 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1e40af;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        h2 {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1d4ed8;
+            border-bottom: 2px solid #bfdbfe;
+            padding-bottom: 4px;
+            margin: 10px 0;
+        }
+        
+        /* Button images */
+        .btn-img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+        
+        .program-img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 4px;
+            margin-right: 8px;
+        }
+        
+        /* Arrows */
+        .arrow {
+            font-size: 16px;
+            color: #2563eb;
+            margin: 0 2px;
+        }
+        
+        /* Sections */
+        .section {
+            margin-bottom: 15px;
+        }
+        
+        /* Button grid */
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .button-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .button-label {
+            font-size: 12px;
+            font-weight: 500;
+            margin-top: 4px;
+            text-align: center;
+        }
+        
+        /* Program cards */
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .program-card {
+            border: 1px solid #dbeafe;
+            border-radius: 8px;
+            padding: 8px;
+        }
+        
+        .program-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        
+        .program-info {
+            flex: 1;
+        }
+        
+        .program-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1d4ed8;
+            margin: 0;
+        }
+        
+        .program-subtitle {
+            font-size: 12px;
+            color: #4b5563;
+            margin: 0;
+        }
+        
+        /* Button sequence */
+        .button-sequence {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            margin-bottom: 5px;
+        }
+        
+        /* Press count badge */
+        .button-container {
+            position: relative;
+        }
+        
+        .press-count {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #2563eb;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 9999px;
+            padding: 3px 6px;
+        }
+        
+        /* Instructions */
+        .instruction {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 500;
+            margin: 5px 0 0 0;
+        }
+        
+        /* Print styles */
+        @media print {
+            body {
+                width: 210mm;
+                height: 297mm;
+                font-size: 12px;
+            }
+            
+            .container {
+                padding: 5mm;
+            }
+            
+            .program-card {
+                page-break-inside: avoid;
+            }
+            
+            .btn-img {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .program-img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ওয়াশিং মেশিন ব্যবহার নির্দেশিকা</h1>
+
+        <!-- Button Introduction -->
+        <div class="section">
+            <h2>বাটন পরিচিতি</h2>
+            <div class="button-grid">
+                <div class="button-item">
+                    <img src="images/button-power.jpg" alt="পাওয়ার বাটন" class="btn-img">
+                    <p class="button-label">পাওয়ার বাটন</p>
+                </div>
+                <div class="button-item">
+                    <img src="images/button-program.jpg" alt="প্রোগ্রাম বাটন" class="btn-img">
+                    <p class="button-label">প্রোগ্রাম বাটন</p>
+                </div>
+                <div class="button-item">
+                    <img src="images/button-spin.jpg" alt="স্পিন বাটন" class="btn-img">
+                    <p class="button-label">স্পিন বাটন</p>
+                </div>
+                <div class="button-item">
+                    <img src="images/button-start-pause.jpg" alt="স্টার্ট/পজ বাটন" class="btn-img">
+                    <p class="button-label">স্টার্ট/পজ বাটন</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Washing Programs -->
+        <div class="section">
+            <h2>ওয়াশিং প্রোগ্রাম</h2>
+            
+            <div class="program-grid">
+                <!-- Fuzzy Washing Program -->
+                <div class="program-card">
+                    <div class="program-header">
+                        <img src="images/program-fuzzy.jpg" alt="ফাজি ওয়াশিং প্রোগ্রাম" class="program-img">
+                        <div class="program-info">
+                            <h3 class="program-title">১. ফাজি ওয়াশিং</h3>
+                            <p class="program-subtitle">রেগুলার কাপড় ধোয়া</p>
+                        </div>
+                    </div>
+                    <div class="button-sequence">
+                        <img src="images/button-power.jpg" alt="পাওয়ার বাটন" class="btn-img">
+                        <span class="arrow">→</span>
+                        <div class="button-container">
+                            <img src="images/button-program.jpg" alt="প্রোগ্রাম বাটন" class="btn-img">
+                            <span class="press-count">১ বার</span>
+                        </div>
+                        <span class="arrow">→</span>
+                        <img src="images/button-start-pause.jpg" alt="স্টার্ট বাটন" class="btn-img">
+                    </div>
+                    <p class="instruction">পাওয়ার → প্রোগ্রাম (১ বার) → স্টার্ট</p>
+                </div>
+
+                <!-- Quick Washing Program -->
+                <div class="program-card">
+                    <div class="program-header">
+                        <img src="images/program-quick.jpg" alt="কুইক ওয়াশিং প্রোগ্রাম" class="program-img">
+                        <div class="program-info">
+                            <h3 class="program-title">২. কুইক ওয়াশিং</h3>
+                            <p class="program-subtitle">১৫ মিনিটে কাপড় ধোঁয়া</p>
+                        </div>
+                    </div>
+                    <div class="button-sequence">
+                        <img src="images/button-power.jpg" alt="পাওয়ার বাটন" class="btn-img">
+                        <span class="arrow">→</span>
+                        <div class="button-container">
+                            <img src="images/button-program.jpg" alt="প্রোগ্রাম বাটন" class="btn-img">
+                            <span class="press-count">২ বার</span>
+                        </div>
+                        <span class="arrow">→</span>
+                        <img src="images/button-start-pause.jpg" alt="স্টার্ট বাটন" class="btn-img">
+                    </div>
+                    <p class="instruction">পাওয়ার → প্রোগ্রাম (২ বার) → স্টার্ট</p>
+                </div>
+
+                <!-- Tub Clean Program -->
+                <div class="program-card">
+                    <div class="program-header">
+                        <img src="images/program-tub-clean.jpg" alt="টাব ক্লিনিং প্রোগ্রাম" class="program-img">
+                        <div class="program-info">
+                            <h3 class="program-title">৩. টাব ক্লিনিং</h3>
+                            <p class="program-subtitle">মাসে একবার মেশিন ধোয়া</p>
+                        </div>
+                    </div>
+                    <div class="button-sequence">
+                        <img src="images/button-power.jpg" alt="পাওয়ার বাটন" class="btn-img">
+                        <span class="arrow">→</span>
+                        <div class="button-container">
+                            <img src="images/button-program.jpg" alt="প্রোগ্রাম বাটন" class="btn-img">
+                            <span class="press-count">৯ বার</span>
+                        </div>
+                        <span class="arrow">→</span>
+                        <img src="images/button-start-pause.jpg" alt="স্টার্ট বাটন" class="btn-img">
+                    </div>
+                    <p class="instruction">পাওয়ার → প্রোগ্রাম (৯ বার) → স্টার্ট</p>
+                </div>
+
+                <!-- Water Spin Program -->
+                <div class="program-card">
+                    <div class="program-header">
+                        <img src="images/button-spin.jpg" alt="স্পিন বাটন" class="program-img">
+                        <div class="program-info">
+                            <h3 class="program-title">৪. স্পিন</h3>
+                            <p class="program-subtitle">কাপড় শুকানোর জন্য</p>
+                        </div>
+                    </div>
+                    <div class="button-sequence">
+                        <img src="images/button-power.jpg" alt="পাওয়ার বাটন" class="btn-img">
+                        <span class="arrow">→</span>
+                        <img src="images/button-spin.jpg" alt="স্পিন বাটন" class="btn-img">
+                        <span class="arrow">→</span>
+                        <img src="images/button-start-pause.jpg" alt="স্টার্ট বাটন" class="btn-img">
+                    </div>
+                    <p class="instruction">পাওয়ার → স্পিন → স্টার্ট</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Print instructions for saving as PDF
+        window.onload = function() {
+            console.log('To save as PDF, use browser print function (Ctrl+P or Cmd+P) and select "Save as PDF" option');
+        };
+    </script>
+</body>
+</html>
